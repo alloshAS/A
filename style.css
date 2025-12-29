@@ -1,0 +1,84 @@
+* {
+  box-sizing:border-box; 
+  margin: 0; padding: 0; 
+}
+
+html, body { 
+  width: 100%;
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, sans-serif; 
+  background: #0b0b14;
+  color: #ffffff;
+  overflow: hidden; 
+}
+
+#app { 
+  width: 100vw;
+  height: 100vh; 
+}
+
+.slide {
+  width: 100%;
+  height: 100%; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+  padding: 1.5rem; 
+}
+
+.primary-btn, .secondary-btn {
+  border: none; 
+  border-radius: 
+  30px; padding:
+  0.9rem 1.6rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center; 
+  gap: 0.5rem; 
+  cursor: pointer; }
+
+.primary-btn { 
+  background: linear-gradient(135deg, #ff5fa2, #ff87c7); 
+  color: #fff; 
+}
+
+.secondary-btn {
+  background: rgba(255, 255, 255, 0.1); 
+  color: #fff; 
+  backdrop-filter: blur(6px);
+  }
+
+.primary-btn:active, .secondary-btn:active {
+  transform: scale(0.96);
+  }
+
+
+.start-slide { 
+  background: radial-gradient(circle at top, #1b1b3a, #07070f); 
+}
+
+.start-slide h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  }
+
+.exit-slide h2 {
+  font-size: 1.6rem;
+  margin-bottom: 2rem; 
+}
+
+.exit-actions { 
+  display: flex; 
+  gap: 1rem; 
+}
+
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0; 
+  width: 100%;
+  height: 100%; 
+}
